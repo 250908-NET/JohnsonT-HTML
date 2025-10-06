@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+</head>
+<body>
+    <ul id="itemList">
+        <li>Add an item with the button below</li>
+    </ul>
+    <button onclick="addItem()">Add Item</button>
+
+    <script>
+        let items = [];
+
+        function addItem() {
+            const ul = document.getElementById('itemList');
+            const li = document.createElement('li');
+            li.textContent = 'New Item';
+            ul.appendChild(li);
+            items.push(li);
+        }
+    </script>
+</body>
+</html>
