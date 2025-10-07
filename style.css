@@ -8,6 +8,7 @@ body{
 
 .hlist{
     display: flex !important;
+    list-style-type: none;
 }
 
 .hlist li{
@@ -15,7 +16,7 @@ body{
     margin-left: 1em !important;
 }
 
-image{
+img.product{
     margin-left: auto;
     margin-right: auto;
     display: block;
