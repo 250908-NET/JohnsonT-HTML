@@ -9,17 +9,17 @@
     <ul id="itemList">
         <li>Add an item with the button below</li>
     </ul>
+    <input type="text" id="itemInput" placeholder="New item text">
     <button onclick="addItem()">Add Item</button>
     <button onclick="alertItems()">Alert Items</button>
 
     <script>
-        //yup
         let items = [];
 
         function addItem() {
             const ul = document.getElementById('itemList');
             const li = document.createElement('li');
-            li.textContent = 'New Item';
+            li.textContent = document.getElementById('itemInput').value || 'New Item';
             ul.appendChild(li);
             items.push(li);
         }
