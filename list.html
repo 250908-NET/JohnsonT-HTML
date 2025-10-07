@@ -10,6 +10,7 @@
         <li>Add an item with the button below</li>
     </ul>
     <button onclick="addItem()">Add Item</button>
+    <button onclick="alertItems()">Alert Items</button>
 
     <script>
         let items = [];
@@ -20,6 +21,10 @@
             li.textContent = 'New Item';
             ul.appendChild(li);
             items.push(li);
+        }
+
+        function alertItems() {
+            alert('Current items: ' + items.map(item => item.textContent).join(', '));
         }
     </script>
 </body>
